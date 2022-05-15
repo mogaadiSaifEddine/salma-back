@@ -17,6 +17,8 @@ public class projetService {
 	projetRepository cr;
 	
 	public void create(projet projet ){
+		projet.setState(true);
+		System.out.println(projet);
 		cr.save(projet );
 	}
 	
@@ -29,7 +31,10 @@ public class projetService {
 			
 	}
 	public void deleteprojet(Long id) {
-	     cr.deleteById(id);
+//	     cr.deleteById(id);
+		 projet p = cr.findById(id).orElse(null);
+		 p.setState(false);
+		 cr.save(p);
 	}
 
 	public projet updateprojet(projet s , Long id ) {

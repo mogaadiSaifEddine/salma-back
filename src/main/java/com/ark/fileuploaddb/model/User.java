@@ -1,8 +1,8 @@
 package com.ark.fileuploaddb.model;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 
@@ -35,9 +35,22 @@ public class User {
     private String password;
 
 
-    @ManyToMany(cascade = CascadeType.ALL )
+
+
+    @ManyToMany(fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.MERGE
+            })
     @JoinTable(name = "user_projet",joinColumns = @JoinColumn(name = "user_id") , inverseJoinColumns = @JoinColumn(name = "projet_id"))
     private Set<projet> projet =  new HashSet<>();
+
+    public User(String username, String name, String email, String encode, Date creationDateTime, boolean b) {
+
+        this.prenom = username ;
+        this.nom = name;
+                this.email = email ;
+        this.password = encode ;
+    }
 
     public Long getId() {
         return id;

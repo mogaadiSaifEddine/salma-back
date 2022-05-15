@@ -1,6 +1,8 @@
 package com.ark.fileuploaddb.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 import java.util.Set;
 
@@ -19,6 +21,10 @@ import javax.persistence.*;
 	private Long P_Id;
 	@Column(name="nom_projet")
 	private String nom;
+	@Column(name="etat",columnDefinition = "boolean default true")
+	private Boolean state;
+
+
 	
 	public Long getP_Id() {
 		return P_Id;
@@ -61,8 +67,15 @@ import javax.persistence.*;
 	@JoinColumn(name = "chantier_ID")
 	Chantier Chantier;
 
-	@ManyToMany
-		Set<User> users;
+
+
+	@JsonIgnoreProperties(value = "projet")
+	@ManyToMany(fetch = FetchType.LAZY,
+			cascade = {
+					CascadeType.MERGE
+			},
+			mappedBy = "projet")
+	Set<User> users;
 	public projet() {
 		// TODO Auto-generated constructor stub
 	}
@@ -79,11 +92,20 @@ import javax.persistence.*;
 		this.users = users;
 	}
 
+	public Boolean getState() {
+		return state;
+	}
+
+	public void setState(Boolean state) {
+		this.state = state;
+	}
+
 	@Override
 	public String toString() {
 		return "projet{" +
 				"P_Id=" + P_Id +
 				", nom='" + nom + '\'' +
+				", state=" + state +
 				", Chantier=" + Chantier +
 				", users=" + users +
 				'}';
