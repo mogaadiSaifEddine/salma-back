@@ -25,4 +25,17 @@ public class UserController {
         List<User> listUser = userRep.findAll();
         return listUser;
     }
+
+
+
+
+    @DeleteMapping("/{id}")
+    public  boolean deleteUser ( @PathVariable Long id ){
+      try{  userRep.deleteById(id);
+      return true ;}
+      catch (Exception e){
+          System.out.println(e);
+          return  false;
+      }
+    }
 }

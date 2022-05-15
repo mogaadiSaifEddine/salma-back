@@ -10,9 +10,9 @@ public class SignupRequest {
 
     private String email;
 
-    private Set<String> role;
 
     private String password;
+    private String role;
 
     Date creationDateTime;
 
@@ -42,11 +42,11 @@ public class SignupRequest {
         this.email = email;
     }
 
-    public Set<String> getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Set<String> role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
@@ -72,5 +72,18 @@ public class SignupRequest {
 
     public void setRole_id(Long role_id) {
         this.role_id = role_id;
+    }
+
+    @Override
+    public String toString() {
+        return "SignupRequest{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                ", creationDateTime=" + creationDateTime +
+                ", role_id=" + role_id +
+                '}';
     }
 }

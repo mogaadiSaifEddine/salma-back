@@ -43,7 +43,7 @@ public class AuthController {
     public ResponseEntity<?> authenticateUser(@RequestBody LoginRequest loginRequest) {
         boolean matchResult;
         User user;
-        user = userRepository.findByNom(loginRequest.getUsername()).orElse(null);
+        user = userRepository.findByEmail(loginRequest.getUsername()).orElse(null);
 //        System.out.println(user);
         if (user == null) {
             return ResponseEntity.ok(new MessageResponse("notuser"));
@@ -71,6 +71,7 @@ public class AuthController {
     }
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser( @RequestBody SignupRequest signUpRequest) {
+        System.out.println(signUpRequest);
         if (userRepository.existsByEmail(signUpRequest.getEmail())) {
             return ResponseEntity
                     .badRequest()
@@ -79,11 +80,12 @@ public class AuthController {
         // Create new user's account
         User user = new User(signUpRequest.getUsername(),
                 signUpRequest.getName(),
+
                 signUpRequest.getEmail(),
                 encoder.encode(signUpRequest.getPassword()),
-                signUpRequest.getCreationDateTime(),
-                false);
-        Set<String> strRoles = signUpRequest.getRole();
+//                signUpRequest.getCreationDateTime(),
+                signUpRequest.getRole());
+//        Set<String> strRoles = signUpRequest.getRole();
 
 
 

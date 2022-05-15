@@ -44,12 +44,13 @@ public class User {
     @JoinTable(name = "user_projet",joinColumns = @JoinColumn(name = "user_id") , inverseJoinColumns = @JoinColumn(name = "projet_id"))
     private Set<projet> projet =  new HashSet<>();
 
-    public User(String username, String name, String email, String encode, Date creationDateTime, boolean b) {
+    public User(String username, String name, String email, String encode,  String role) {
 
         this.prenom = username ;
         this.nom = name;
                 this.email = email ;
         this.password = encode ;
+        this.role = role ;
     }
 
     public Long getId() {
