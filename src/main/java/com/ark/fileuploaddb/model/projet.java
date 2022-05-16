@@ -4,6 +4,8 @@ package com.ark.fileuploaddb.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
+import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -25,7 +27,13 @@ import javax.persistence.*;
 	private Boolean state;
 
 
-	
+
+	private ZonedDateTime date = ZonedDateTime.now();
+
+	public ZonedDateTime getDate() {
+		return date;
+	}
+
 	public Long getP_Id() {
 		return P_Id;
 	}
@@ -79,6 +87,8 @@ import javax.persistence.*;
 	public projet() {
 		// TODO Auto-generated constructor stub
 	}
+
+
 
 	public void setChantier(com.ark.fileuploaddb.model.Chantier chantier) {
 		Chantier = chantier;

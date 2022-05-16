@@ -205,3 +205,295 @@
 2022-05-16 00:33:45.389  INFO 11852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-05-16 00:33:45.389  INFO 11852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-05-16 00:33:45.392  INFO 11852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-16 02:22:57.255  INFO 11852 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 02:22:57.315  INFO 11852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-16 02:22:57.365  INFO 11852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-16 19:45:26.748  INFO 15732 --- [main] c.a.f.FileuploadDbApplication            : Starting FileuploadDbApplication using Java 17 on DESKTOP-13QO7A0 with PID 15732 (C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main\target\classes started by DND in C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main)
+2022-05-16 19:45:26.754  INFO 15732 --- [main] c.a.f.FileuploadDbApplication            : No active profile set, falling back to default profiles: default
+2022-05-16 19:45:27.183  INFO 15732 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 19:45:30.078  INFO 15732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 19:45:30.083  INFO 15732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-05-16 19:45:30.201  INFO 15732 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.ChantierRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:45:30.207  INFO 15732 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.FileDbRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:45:30.215  INFO 15732 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:45:30.221  INFO 15732 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:45:30.227  INFO 15732 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projet_ispRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:45:30.228  INFO 15732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 0 JDBC repository interfaces.
+2022-05-16 19:45:30.257  INFO 15732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 19:45:30.260  INFO 15732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-16 19:45:30.398  INFO 15732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 5 JPA repository interfaces.
+2022-05-16 19:45:31.522  INFO 15732 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@20411320' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 19:45:31.537  INFO 15732 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 19:45:33.056  INFO 15732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-16 19:45:33.100  INFO 15732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 19:45:33.101  INFO 15732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-05-16 19:45:33.676  INFO 15732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 19:45:33.677  INFO 15732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6462 ms
+2022-05-16 19:45:33.926  WARN 15732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 19:45:34.519  INFO 15732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-16 19:45:34.776  INFO 15732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-05-16 19:45:35.489  INFO 15732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2022-05-16 19:45:35.760  INFO 15732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 19:45:36.287  INFO 15732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 19:45:36.349  INFO 15732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-16 19:45:39.208  INFO 15732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-16 19:45:39.262  INFO 15732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 19:45:40.842  INFO 15732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2022-05-16 19:45:40.842  INFO 15732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/global/**'] with []
+2022-05-16 19:45:40.844  INFO 15732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2022-05-16 19:45:41.261  INFO 15732 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38b0e2a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@2634d000, org.springframework.security.web.header.HeaderWriterFilter@74919649, org.springframework.web.filter.CorsFilter@6bdad3bb, org.springframework.security.web.authentication.logout.LogoutFilter@f5f8de2, com.ark.fileuploaddb.security.jwt.AuthTokenFilter@3be369fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a7dcfb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@520ec7a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73eae5f, org.springframework.security.web.session.SessionManagementFilter@3892802b, org.springframework.security.web.access.ExceptionTranslationFilter@444c0f9a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a053795]
+2022-05-16 19:45:42.400  INFO 15732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-16 19:45:42.418  INFO 15732 --- [main] c.a.f.FileuploadDbApplication            : Started FileuploadDbApplication in 18.694 seconds (JVM running for 25.97)
+2022-05-16 19:48:33.753  INFO 15732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 19:48:33.753  INFO 15732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 19:48:33.756  INFO 15732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-16 19:52:14.827  INFO 15732 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 19:52:14.837  INFO 15732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-16 19:52:14.858  INFO 15732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-16 19:52:22.448  INFO 18968 --- [main] c.a.f.FileuploadDbApplication            : Starting FileuploadDbApplication using Java 17 on DESKTOP-13QO7A0 with PID 18968 (C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main\target\classes started by DND in C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main)
+2022-05-16 19:52:22.451  INFO 18968 --- [main] c.a.f.FileuploadDbApplication            : No active profile set, falling back to default profiles: default
+2022-05-16 19:52:22.701  INFO 18968 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 19:52:25.026  INFO 18968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 19:52:25.032  INFO 18968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-05-16 19:52:25.569  INFO 18968 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.ChantierRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:52:25.576  INFO 18968 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.FileDbRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:52:25.601  INFO 18968 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:52:25.608  INFO 18968 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:52:25.613  INFO 18968 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projet_ispRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 19:52:25.615  INFO 18968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 570 ms. Found 0 JDBC repository interfaces.
+2022-05-16 19:52:25.684  INFO 18968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 19:52:25.687  INFO 18968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-16 19:52:25.932  INFO 18968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 227 ms. Found 5 JPA repository interfaces.
+2022-05-16 19:52:27.400  INFO 18968 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c46dcbe' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 19:52:27.412  INFO 18968 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 19:52:28.354  INFO 18968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-16 19:52:28.375  INFO 18968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 19:52:28.375  INFO 18968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-05-16 19:52:28.602  INFO 18968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 19:52:28.603  INFO 18968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5899 ms
+2022-05-16 19:52:28.752  WARN 18968 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 19:52:29.109  INFO 18968 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-16 19:52:29.308  INFO 18968 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-05-16 19:52:29.626  INFO 18968 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2022-05-16 19:52:29.834  INFO 18968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 19:52:30.258  INFO 18968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 19:52:30.307  INFO 18968 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-16 19:52:31.732  INFO 18968 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-16 19:52:31.750  INFO 18968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 19:52:33.827  INFO 18968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2022-05-16 19:52:33.831  INFO 18968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/global/**'] with []
+2022-05-16 19:52:33.831  INFO 18968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2022-05-16 19:52:34.385  INFO 18968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@706690e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@25c16cf7, org.springframework.security.web.header.HeaderWriterFilter@2ba08f26, org.springframework.web.filter.CorsFilter@3663af34, org.springframework.security.web.authentication.logout.LogoutFilter@677c2820, com.ark.fileuploaddb.security.jwt.AuthTokenFilter@2674ca88, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38874eb5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cfb7450, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59aba3c3, org.springframework.security.web.session.SessionManagementFilter@6a0ee80, org.springframework.security.web.access.ExceptionTranslationFilter@c478e4e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5392aa2b]
+2022-05-16 19:52:35.197  INFO 18968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-16 19:52:35.218  INFO 18968 --- [main] c.a.f.FileuploadDbApplication            : Started FileuploadDbApplication in 14.611 seconds (JVM running for 15.728)
+2022-05-16 19:53:22.211  INFO 18968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 19:53:22.211  INFO 18968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 19:53:22.214  INFO 18968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-16 20:18:35.946  WARN 18968 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6fe6323a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.946  WARN 18968 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4755eaf7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.946  WARN 18968 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@773774a6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.951  WARN 18968 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4744455e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.951  WARN 18968 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33ba1317 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.952  WARN 18968 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@586fc065 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.952  WARN 18968 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17c2a518 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.953  WARN 18968 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6d1380b8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.954  WARN 18968 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14310d8a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:18:35.954  WARN 18968 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7fa8f745 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-05-16 20:19:05.914  WARN 18968 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2022-05-16 20:19:05.914  WARN 18968 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2022-05-16 20:19:05.914  WARN 18968 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2022-05-16 20:19:05.915 ERROR 18968 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30008ms.
+2022-05-16 20:19:05.915 ERROR 18968 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30008ms.
+2022-05-16 20:19:05.915 ERROR 18968 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30008ms.
+2022-05-16 20:19:05.915 ERROR 18968 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2022-05-16 20:19:05.915 ERROR 18968 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2022-05-16 20:19:05.915 ERROR 18968 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2022-05-16 20:19:05.993 ERROR 18968 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:119) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-05-16 20:19:05.993 ERROR 18968 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:119) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-05-16 20:19:05.993 ERROR 18968 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:119) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-05-16 20:19:08.981  WARN 18968 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2022-05-16 20:19:08.981  WARN 18968 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2022-05-16 20:19:08.981  WARN 18968 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2022-05-16 20:19:08.981  WARN 18968 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2022-05-16 20:19:08.981 ERROR 18968 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2022-05-16 20:19:08.981  WARN 18968 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2022-05-16 20:19:08.982 ERROR 18968 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2022-05-16 20:19:08.981  WARN 18968 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2022-05-16 20:19:08.982 ERROR 18968 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2022-05-16 20:19:08.981 ERROR 18968 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2022-05-16 20:19:08.982 ERROR 18968 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2022-05-16 20:19:08.983 ERROR 18968 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2022-05-16 20:19:09.013  INFO 18968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 20:19:09.027  INFO 18968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-16 20:19:14.468  INFO 18968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-16 20:19:23.406  INFO 25148 --- [main] c.a.f.FileuploadDbApplication            : Starting FileuploadDbApplication using Java 17 on DESKTOP-13QO7A0 with PID 25148 (C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main\target\classes started by DND in C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main)
+2022-05-16 20:19:23.408  INFO 25148 --- [main] c.a.f.FileuploadDbApplication            : No active profile set, falling back to default profiles: default
+2022-05-16 20:19:23.542  INFO 25148 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 20:19:25.085  INFO 25148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 20:19:25.088  INFO 25148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-05-16 20:19:25.173  INFO 25148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.ChantierRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:19:25.178  INFO 25148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.FileDbRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:19:25.185  INFO 25148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:19:25.190  INFO 25148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:19:25.194  INFO 25148 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projet_ispRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:19:25.196  INFO 25148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 0 JDBC repository interfaces.
+2022-05-16 20:19:25.220  INFO 25148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 20:19:25.223  INFO 25148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-16 20:19:25.326  INFO 25148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 5 JPA repository interfaces.
+2022-05-16 20:19:26.084  INFO 25148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@52cb4f50' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 20:19:26.092  INFO 25148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 20:19:26.891  INFO 25148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-16 20:19:26.913  INFO 25148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 20:19:26.914  INFO 25148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-05-16 20:19:27.194  INFO 25148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 20:19:27.195  INFO 25148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3651 ms
+2022-05-16 20:19:27.302  WARN 25148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 20:19:27.622  INFO 25148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-16 20:19:27.748  INFO 25148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-05-16 20:19:28.056  INFO 25148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2022-05-16 20:19:28.248  INFO 25148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 20:19:28.570  INFO 25148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 20:19:28.606  INFO 25148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-16 20:19:30.108  INFO 25148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-16 20:19:30.122  INFO 25148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 20:19:31.385  INFO 25148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2022-05-16 20:19:31.385  INFO 25148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/global/**'] with []
+2022-05-16 20:19:31.386  INFO 25148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2022-05-16 20:19:31.772  INFO 25148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d38cdde, org.springframework.security.web.context.SecurityContextPersistenceFilter@770cbe5d, org.springframework.security.web.header.HeaderWriterFilter@293ecff6, org.springframework.web.filter.CorsFilter@3809f65d, org.springframework.security.web.authentication.logout.LogoutFilter@1cfb7450, com.ark.fileuploaddb.security.jwt.AuthTokenFilter@38f63756, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d90d91f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4745bcc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@717b0d81, org.springframework.security.web.session.SessionManagementFilter@7d07e04e, org.springframework.security.web.access.ExceptionTranslationFilter@66d44581, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f4fc18]
+2022-05-16 20:19:32.348  INFO 25148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-16 20:19:32.366  INFO 25148 --- [main] c.a.f.FileuploadDbApplication            : Started FileuploadDbApplication in 10.075 seconds (JVM running for 11.029)
+2022-05-16 20:19:37.110  INFO 25148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 20:19:37.111  INFO 25148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 20:19:37.115  INFO 25148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-05-16 20:22:32.943  INFO 25148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 20:22:32.952  INFO 25148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-16 20:22:32.976  INFO 25148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-16 20:22:51.423  INFO 8092 --- [main] c.a.f.FileuploadDbApplication            : Starting FileuploadDbApplication using Java 17 on DESKTOP-13QO7A0 with PID 8092 (C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main\target\classes started by DND in C:\Users\DND\Downloads\wetransfer_fileupload-db-main_2022-05-14_1249\fileupload-db-main)
+2022-05-16 20:22:51.425  INFO 8092 --- [main] c.a.f.FileuploadDbApplication            : No active profile set, falling back to default profiles: default
+2022-05-16 20:22:51.515  INFO 8092 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 20:22:53.023  INFO 8092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 20:22:53.027  INFO 8092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-05-16 20:22:53.185  INFO 8092 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.ChantierRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:22:53.195  INFO 8092 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.FileDbRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:22:53.206  INFO 8092 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:22:53.214  INFO 8092 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projetRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:22:53.221  INFO 8092 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ark.fileuploaddb.repository.projet_ispRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-05-16 20:22:53.223  INFO 8092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 0 JDBC repository interfaces.
+2022-05-16 20:22:53.270  INFO 8092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-16 20:22:53.276  INFO 8092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-16 20:22:53.388  INFO 8092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 5 JPA repository interfaces.
+2022-05-16 20:22:54.278  INFO 8092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6bbe50c9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 20:22:54.301  INFO 8092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-16 20:22:55.522  INFO 8092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-16 20:22:55.550  INFO 8092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 20:22:55.551  INFO 8092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-05-16 20:22:55.896  INFO 8092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 20:22:55.896  INFO 8092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4379 ms
+2022-05-16 20:22:56.061  WARN 8092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 20:22:56.481  INFO 8092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-16 20:22:56.572  INFO 8092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-05-16 20:22:56.843  INFO 8092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2022-05-16 20:22:57.046  INFO 8092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 20:22:57.297  INFO 8092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 20:22:57.336  INFO 8092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-16 20:22:58.715  INFO 8092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-16 20:22:58.728  INFO 8092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 20:23:00.211  INFO 8092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2022-05-16 20:23:00.213  INFO 8092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/global/**'] with []
+2022-05-16 20:23:00.213  INFO 8092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2022-05-16 20:23:00.685  INFO 8092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bdad3bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@6033f36c, org.springframework.security.web.header.HeaderWriterFilter@1e466d, org.springframework.web.filter.CorsFilter@73eae5f, org.springframework.security.web.authentication.logout.LogoutFilter@3cab07dd, com.ark.fileuploaddb.security.jwt.AuthTokenFilter@510203de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4745bcc6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71de1091, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4902c584, org.springframework.security.web.session.SessionManagementFilter@1e2b37cd, org.springframework.security.web.access.ExceptionTranslationFilter@21dd9203, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@328bc067]
+2022-05-16 20:23:01.365  INFO 8092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-16 20:23:01.383  INFO 8092 --- [main] c.a.f.FileuploadDbApplication            : Started FileuploadDbApplication in 10.653 seconds (JVM running for 11.744)
+2022-05-16 20:23:03.140  INFO 8092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 20:23:03.141  INFO 8092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 20:23:03.143  INFO 8092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
