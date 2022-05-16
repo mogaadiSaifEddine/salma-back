@@ -25,9 +25,9 @@ public class projetService {
 	
 	public List<projet > getAllprojet(){
 		List<projet> list = new ArrayList<>();
-		
-		this.cr.findAll().forEach(i->list.add(i));
-		return list;
+
+		return (List<projet>)	this.cr.findAll();
+
 			
 	}
 	public void deleteprojet(Long id) {
