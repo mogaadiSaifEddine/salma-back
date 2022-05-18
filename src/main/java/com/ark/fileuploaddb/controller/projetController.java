@@ -2,8 +2,13 @@ package com.ark.fileuploaddb.controller;
 
 
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import com.ark.fileuploaddb.model.IspDefultNames;
+import com.ark.fileuploaddb.repository.IspDefaultNamesRepo;
+import com.ark.fileuploaddb.repository.projetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -33,6 +38,14 @@ public class projetController{
 	@Autowired
 	projetService StockService;
 	// http://localhost:8089/p/show
+
+
+	@Autowired
+	IspDefaultNamesRepo ispDefaultNamesRepo ;
+
+
+@Autowired
+	projetRepository ProjetRep;
 	@GetMapping("/show")
 	@ResponseBody
 	public List<projet> getAllprojet() {
@@ -45,8 +58,19 @@ public class projetController{
 	@PostMapping("/add")
 	public void create(@RequestBody projet Stock)
 	{
+		System.out.println((Stock.getISPDefultNames()));
+
+		Set <IspDefultNames> listIspDegfaultNames = new HashSet<>() ;
+	List	<IspDefultNames>listIspDegfaultName =  this.ispDefaultNamesRepo.findAll();
+		for (IspDefultNames x : listIspDegfaultName)
+			x.getProjet().add(Stock);
+
+		System.out.println(listIspDegfaultNames);
+		Stock.setISPDefultNames(listIspDegfaultNames);
+		Stock.getISPDefultNames().addAll(listIspDegfaultNames);
+		System.out.println(Stock.getISPDefultNames());
 		System.out.println(Stock.getChantier());
-	 StockService.create(Stock);
+	 StockService.create(Stock,listIspDegfaultNames);
 	
 	
 	}
@@ -64,6 +88,13 @@ public class projetController{
 	 public void updateprojet(@RequestBody projet stock , @PathVariable Long id )
 	 {
 	  StockService.updateprojet(stock , id);
+	  }
+
+
+	  @GetMapping ("/{id}")
+	  public projet getAllISPByProjet(@PathVariable Long id ) {
+		  projet proj  = ProjetRep.findById(id).orElse(null);
+		  return proj;
 	  }
 }
 

@@ -1,11 +1,14 @@
 package com.ark.fileuploaddb.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
 import java.time.ZonedDateTime;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -83,12 +86,30 @@ import javax.persistence.*;
 					CascadeType.MERGE
 			},
 			mappedBy = "projet")
-	Set<User> users;
+	Set<User> users = new HashSet<>();
+
+
+
+
+	@JsonIgnore
+	@ManyToMany(fetch = FetchType.EAGER,
+			cascade = {
+					CascadeType.MERGE
+			},
+			mappedBy = "projet")
+
+	private Set<IspDefultNames> ISPDefultNames =new HashSet<>();
 	public projet() {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Set<com.ark.fileuploaddb.model.IspDefultNames> getISPDefultNames() {
+		return ISPDefultNames;
+	}
 
+	public void setISPDefultNames(Set<com.ark.fileuploaddb.model.IspDefultNames> ISPDefultNames) {
+		this.ISPDefultNames = ISPDefultNames;
+	}
 
 	public void setChantier(com.ark.fileuploaddb.model.Chantier chantier) {
 		Chantier = chantier;
@@ -116,8 +137,10 @@ import javax.persistence.*;
 				"P_Id=" + P_Id +
 				", nom='" + nom + '\'' +
 				", state=" + state +
+				", date=" + date +
 				", Chantier=" + Chantier +
 				", users=" + users +
+				", ISPDefultNames=" + ISPDefultNames +
 				'}';
 	}
 }

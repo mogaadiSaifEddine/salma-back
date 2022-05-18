@@ -22,7 +22,7 @@ public class ChantierService {
 	public List<Chantier > getAllChantier(){
 		List<Chantier> list = new ArrayList<>();
 		
-		this.cr.findAll() ;
+
 		return (List<Chantier>) this.cr.findAll();
 			
 	}

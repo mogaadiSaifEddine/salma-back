@@ -1,4 +1,6 @@
 package com.ark.fileuploaddb.service;
+import com.ark.fileuploaddb.model.IspDefultNames;
+import com.ark.fileuploaddb.repository.IspDefaultNamesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,17 +11,27 @@ import com.ark.fileuploaddb.repository.projetRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 
 @Service
 public class projetService {
 	@Autowired
 	projetRepository cr;
-	
-	public void create(projet projet ){
+
+
+	@Autowired
+	IspDefaultNamesRepo ispDefaultNamesRepo ;
+
+	public void create(projet projet , Set<IspDefultNames> ispDefultNamesSet){
 		projet.setState(true);
-		System.out.println(projet);
-		cr.save(projet );
+		System.out.println(projet) ;
+		System.out.println(projet) ;
+		System.out.println(projet) ;
+		projet.setISPDefultNames(ispDefultNamesSet);
+		projet eprojet =   cr.save(projet );
+		eprojet.getISPDefultNames().addAll(ispDefultNamesSet);
+		cr.save(eprojet );
 	}
 	
 	
